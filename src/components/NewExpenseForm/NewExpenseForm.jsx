@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import TextField from "../TextField/TextField";
 import axios from "axios";
+import "./NewExpenseForm.css";
 
 const NewExpenseForm = ({ onNewExpense }) => {
   const [name, setName] = useState("");
@@ -20,7 +21,7 @@ const NewExpenseForm = ({ onNewExpense }) => {
     };
     try {
       const response = await axios.post(
-        "https://localhost:5001/api/Expenses",
+        "https://localhost:5001/api/Expenses/",
         formData
       );
       if (response.status === 201) {
