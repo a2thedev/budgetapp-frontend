@@ -9,7 +9,7 @@ const DeleteIncomeForm = ({ incomeId }) => {
         `https://localhost:5001/api/Incomes/${incomeId}`
       );
     } catch (error) {
-      console.warn("Error deleting Income:", error);
+      console.warn("Error deleting income:", error);
     }
   };
 
