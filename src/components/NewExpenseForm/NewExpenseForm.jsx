@@ -8,7 +8,6 @@ const NewExpenseForm = ({ onNewExpense }) => {
   const [amount, setAmount] = useState("");
   const [date, setDate] = useState("");
   const [rating, setRating] = useState("");
-  const [isPaid, setIsPaid] = useState("");
 
   const handleSubmit = async (e) => {
     e.preventDefault();
@@ -17,7 +16,6 @@ const NewExpenseForm = ({ onNewExpense }) => {
       amount,
       date,
       rating,
-      isPaid,
     };
     try {
       const response = await axios.post(
@@ -44,7 +42,7 @@ const NewExpenseForm = ({ onNewExpense }) => {
           onChange={setDate}
         />
         <TextField label="Rating" value={rating} onChange={setRating} />
-        <TextField label="IsPaid" value={isPaid} onChange={setIsPaid} />
+
         <div className="d-flex justify-content-center">
           <button className="btn btn-outline-success" type="submit">
             Add Expense

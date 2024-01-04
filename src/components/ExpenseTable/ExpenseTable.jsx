@@ -1,5 +1,5 @@
 import ExpenseItem from "../ExpenseItem/ExpenseItem";
-import "./ExpenseItem.css";
+import "./ExpenseTable.css";
 
 const ExpenseTable = ({ expense = [], activeIndex, setActiveIndex }) => {
   const expenseItems = expense.map((expense, i) => (

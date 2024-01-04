@@ -6,10 +6,14 @@ ul {
 
 li {
   font-size: 1.25rem;
+  font-family: monospace;
 }
 
+b {
+  font-size: 2.5rem;
+}
 .navBar {
-  background: steelblue;
+  background: rgb(4, 196, 106);
   box-shadow: 4px 2px 5px gray;
   color: white;
   margin-bottom: 2rem;
